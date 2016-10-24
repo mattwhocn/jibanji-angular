@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>jibanji-angular</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript" src="script/js/resize.js"></script>
+</head>
+<body >
+	<div ui-view class="container">
+		<!-- 容器 -->
+	</div>
+    <div class=tab_bar>
+        <ul>
+            <!-- ui-sref属性完成stste之间的跳转 -->
+            <a  ui-sref="home"><li>班集</li></a>
+            <a  ui-sref="classroom"><li>课堂</li></a>
+            <a  ui-sref="find"><li>发现</li></a>
+            <a  ui-sref="mine"><li>我的</li></a>
+        </ul>
+    </div>
+
+</body>
+
+<!-- 引入的script文件 -->
+<script type="text/javascript" src="script/lib/jquery-1.7.1.js"></script>
+
+<script type="text/javascript" src="script/lib/angular.js"></script>
+<script type="text/javascript" src="script/lib/angular-ui-router.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</html>
